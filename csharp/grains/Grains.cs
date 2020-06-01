@@ -34,10 +34,10 @@ public static class Grains
         // https://en.wikipedia.org/wiki/Geometric_series#Sum
         // Sum = a * ((1 - r^n) / (1 - r))
 
-        ulong a = 1;
-        ulong r = 2;
+        int a = 1;
+        int r = 2;
         BigInteger rn = BigInteger.Pow(r, 64);
 
-        return (ulong)(a * ((1 - rn) / (1 - 2)));
+        return (ulong)(a * ((1 - rn) / (1 - r)));
     }
 }
